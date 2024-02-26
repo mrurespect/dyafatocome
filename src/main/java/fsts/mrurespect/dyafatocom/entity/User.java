@@ -20,7 +20,9 @@ public class User {
     private int age ;
     @Column
     private String email ;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+
     private List<Familly> famillieMembers ;
     @Id
     private Long id;

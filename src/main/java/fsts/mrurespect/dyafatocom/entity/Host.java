@@ -15,7 +15,8 @@ public class Host extends User {
     private String cin ;
     @Column
     private String description ;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "host_id")
     private List<Language> languages ;
 
     @Enumerated(EnumType.STRING)
