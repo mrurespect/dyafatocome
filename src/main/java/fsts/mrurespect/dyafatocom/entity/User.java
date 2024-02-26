@@ -1,8 +1,8 @@
 package fsts.mrurespect.dyafatocom.entity;
 
+import fsts.mrurespect.dyafatocom.Enums.Sexe;
 import jakarta.persistence.*;
 
-import java.lang.annotation.Target;
 import java.util.List;
 
 @Table(name = "user")
